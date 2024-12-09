@@ -16,8 +16,8 @@ convert_to_utc <- function(date, time, timezone) {
   # Determine the base offset for the time zone
   offset <- switch(
     timezone,
-    "Eastern time" = -5,  # UTC-5
-    "Pacific time" = -8,  # UTC-8
+    "Eastern time" = 5,  # UTC-5
+    "Pacific time" = 8,  # UTC-8
     "UTC" = 0,            # No offset
     0                     # Default value for unknown time zones
   )
